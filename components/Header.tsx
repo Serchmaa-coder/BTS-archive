@@ -1,6 +1,8 @@
 import Image from "next/image";
 import BtsLogoOutlined from "../public/bts_logo_outlined.png";
 import { Button } from "./ui/button";
+import Link from "next/link";
+
 
 export default function Header() {
   return (
@@ -11,7 +13,8 @@ export default function Header() {
       <div className="grid grid-cols-3 gap-x-2">
         <Button>Discography</Button> 
         <Button>Members</Button>{" "}
-        <Button>Fandom</Button>
+        <Button>
+            <Link href={"/sign-up"}>Sign up for fandom</Link> </Button>
       </div>
     </div>
   );
